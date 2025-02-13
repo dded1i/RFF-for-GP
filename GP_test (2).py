@@ -37,14 +37,8 @@ y_predict = best.predict(x_f)
 
 print(f"Mean error = {np.sqrt(np.mean(np.square(y_predict - y_f)))}")
 
+# Plot the results
 plt.figure(dpi=100)
-plt.subplot(1, 3, 1)
-# plt.plot(y_f)
-# plt.plot(y_predict)
-# plt.hist(y_f, bins=30, histtype='step', color='blue')
-plt.hist(np.abs(y_f - y_predict), bins=30, histtype='step', color='red')
-plt.subplot(1, 3, 2)
+plt.figure(figsize=(9, 6))  # Set figure size for the box plot
 plt.boxplot(all_ros, flierprops={'marker': 'o', 'markersize': 1})
-plt.subplot(1, 3, 3)
-plt.plot(likelihoods)
 plt.show()
