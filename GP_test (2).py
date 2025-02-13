@@ -2,6 +2,8 @@ import numpy as np
 import GP_no_scheme as gp
 import matplotlib.pyplot as plt
 
+
+#surface response we test on
 # Let's test (6.2 in the paper):
 # y = x1 + x2 + sin(3 * x3) + sin(5 * x4) + eps
 
@@ -11,6 +13,7 @@ import matplotlib.pyplot as plt
 def func(x: np.ndarray, eps=0):
     return x[:, 1] * x[:, 3] * np.sqrt(x[:, 5]) + x[:, 10] + 0.5 * np.exp(x[:, 11]) + eps
 
+#parametrization, same as in the simulation studies we have replicated
 n = 100
 p = 20
 n_f = 100
@@ -23,8 +26,9 @@ x_f = np.random.uniform(size=(n_f, p))
 y = func(x, eps)
 y_f = func(x_f)
 
-model = gp.GPM3(x, y, 0.25, 2, 0.1, 500)
-# model = gp.GPM_rand_features(x, y, 0.25, 2, 0.1, 500, 100)
+#commented out GPM3 refers to adaptive MCMC scheme without the random features
+#model = gp.GPM3(x, y, 0.25, 2, 0.1, 500)
+model = gp.GPM_rand_features(x, y, 0.25, 2, 0.1, 500, 100)
 # model.m = 20
 models = model.mcmc_iterate_verbose(5_000, 100)
 print(models[-1].alpha)
