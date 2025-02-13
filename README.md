@@ -34,3 +34,16 @@ n_f = 100
 
 This section is input data, which also aligns with the simulation. You can modify n (covariance matrix dimension), but I was more interested in the number of iterations.
 
+
+```python
+model = gp.GPM_rand_features(x, y, 0.25, 2, 0.1, 500, 100)
+```
+
+This also contains parameters according to the paper.
+
+```python
+models = model.mcmc_iterate_verbose(5_000, 100)
+```
+
+Finally, here in the first parameter, you can decide on the number of iterations (1 coordinate) and the step in which the iterations are explained. This is where you play around!
+
