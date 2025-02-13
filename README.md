@@ -14,7 +14,7 @@ Ensure **Python 3.7+** is installed with the required packages:
 pip install numpy scipy scikit-learn matplotlib```
 
 
-## Usage
+## Usage  
 The functions to test and plot results are in `GP_test (2).py`.  
 Variable selection implementation is in `GP_no_scheme.py`.  
 No modifications are needed to run the simulations.  
