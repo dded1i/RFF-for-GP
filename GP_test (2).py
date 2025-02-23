@@ -2,7 +2,7 @@ import numpy as np
 import GP_no_scheme as gp
 import matplotlib.pyplot as plt
 
-
+np.random.seed(42)
 #surface response we test on
 # Let's test (6.2 in the paper):
 # y = x1 + x2 + sin(3 * x3) + sin(5 * x4) + eps
