@@ -7,11 +7,11 @@ np.random.seed(42)
 # Let's test (6.2 in the paper):
 # y = x1 + x2 + sin(3 * x3) + sin(5 * x4) + eps
 
-# def func(x: np.ndarray, eps=0):
-    # return x[:, 0] + x[:, 1] + np.sin(3 * x[:, 2]) + np.sin(5 * x[:, 3]) + eps
-
 def func(x: np.ndarray, eps=0):
-    return x[:, 1] * x[:, 3] * np.sqrt(x[:, 5]) + x[:, 10] + 0.5 * np.exp(x[:, 11]) + eps
+    return x[:, 0] + x[:, 1] + np.sin(3 * x[:, 2]) + np.sin(5 * x[:, 3]) + eps
+
+# def func(x: np.ndarray, eps=0):
+#    return x[:, 1] * x[:, 3] * np.sqrt(x[:, 5]) + x[:, 10] + 0.5 * np.exp(x[:, 11]) + eps
 
 #parametrization, same as in the simulation studies we have replicated
 n = 100
