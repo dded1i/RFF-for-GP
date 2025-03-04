@@ -7,7 +7,7 @@ A Python implementation of Gaussian Processes (GP) with Random Fourier Features 
 - Implements Gaussian Process (GP) regression.  
 - Uses Random Fourier Features (RFF) for computational efficiency.  
 - Supports different kernel functions.  
-
+## Expected Results
 ## Usage
 The functions to test and plot results are in GP_test (2).py.
 Variable selection implementation is in GP_no_scheme.py.
@@ -46,4 +46,4 @@ models = model.mcmc_iterate_verbose(5_000, 100)
 ```
 
 Finally, here in the first parameter, you can decide on the number of iterations (1 coordinate) and the step in which the iterations are explained. This is where you play around!
-
+## Performance Metrics
