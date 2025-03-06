@@ -94,7 +94,10 @@ The `GP_test(2).py` script follows these steps:
 - ### Expected Results:
  - **Mean Error:**
     -  Mean error = 0.055775034318735026
+ - **Run Time:**
+   - T ≈ 40 s
   
+     
     
 
     
@@ -105,7 +108,8 @@ To test the variable selection method with the RFF kernel, run GP_test(2).py. Ma
 The expected results include:
 - **Mean Error:**
     -  Mean error = 0.055775034318735026
-
+- **Variable Selection Results:**
+    - Correctly identifies 4 / 4 covariates (corresponding to x₁, x₂, x₃, x₄) 
 
 
 
