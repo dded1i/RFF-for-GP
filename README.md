@@ -49,7 +49,20 @@ The `GP_test(2).py` script follows these steps:
   parametrization, same as in the simulation studies we have replicated, where:
    - `n`: size of training data set
    - `p`: input vector length
-
+ 
+-  Generating Training and Test Data 
+  ```
+  x = np.random.uniform(size=(n, p))  
+  eps = np.random.normal(scale=0.05, size=n)  
+  x_f = np.random.uniform(size=(n_f, p))
+  y = func(x, eps)
+  y_f = func(x_f)
+  ```
+- Initializing the Gaussian Process Model
+  ```
+  model = gp.GPM_rand_features(x, y, 0.25, 2, 0.1, 500, 100)
+  ```
+  - `gp.GPM_rand_features` initializes a GP model using Random Fourier Features (RFF).
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
 The expected results include:
