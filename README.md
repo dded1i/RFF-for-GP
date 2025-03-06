@@ -6,25 +6,32 @@ A Python implementation of Gaussian Processes (GP) with Random Fourier Features 
 ## Features  
 - Implements Gaussian Process (GP) regression.  
 - Uses Random Fourier Features (RFF) for computational efficiency.  
-- Supports different kernel functions.  
+- Supports different kernel functions.
+
+## Installation  
+Ensure **Python 3.7+** is installed with the required packages:  
+```bash
+pip install numpy scipy scikit-learn matplotlib
+```
+
+## Usage
+To test the variable selection method with the RFF kernel, run `GP_test(2).py`.  
+Ensure that this file is in the same folder as `GP_no_scheme.py`.  
+No modifications to the files are needed to run the simulations. 
+This will generate:
+- a printed Mean Error value
+- runtime in seconds
+- boxplots illustration of the association of individual covariates (x’s) with the response
+
+
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
 The expected results include:
 - **Mean Error:**
     -  Mean error = 0.055775034318735026
 
-## Usage
-The functions to test and plot results are in GP_test (2).py.
-Variable selection implementation is in GP_no_scheme.py.
-No modifications are needed to run the simulations.
-
 
 For questions or suggestions, contact me at dd68@rice.edu 
-## Installation  
-Ensure **Python 3.7+** is installed with the required packages:  
-```bash
-pip install numpy scipy scikit-learn matplotlib
-```
 
 ## Example  
 ```python
