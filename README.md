@@ -40,6 +40,16 @@ The `GP_test(2).py` script follows these steps:
   ```
   - `eps` is normally distributed noise term.
   - The function corresponds to equation (6.2) from the referenced paper for results comparison, but you can modify it as needed.
+ 
+  - Setting Simulation Parameters:
+    ```
+    n = 100     
+    p = 20      
+    n_f = 100   
+    ```
+    - parametrization, same as in the simulation studies we have replicated, where:
+    -   `n`: size of training data set
+    -   `p`: input vector length
 
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
