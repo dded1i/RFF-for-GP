@@ -31,7 +31,7 @@ The `GP_test(2).py` script follows these steps:
   import GP_no_scheme as gp
   import matplotlib.pyplot as plt
   ```
-
+- set random seed `np.random.seed(42)` to make the results reproducible
 
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
