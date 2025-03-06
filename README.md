@@ -31,7 +31,15 @@ The `GP_test(2).py` script follows these steps:
   import GP_no_scheme as gp
   import matplotlib.pyplot as plt
   ```
+  
 - set random seed `np.random.seed(42)` to make the results reproducible
+- define the response function:
+  ```
+  def func(x: np.ndarray, eps=0):
+  return x[:, 0] + x[:, 1] + np.sin(3 * x[:, 2]) + np.sin(5 * x[:, 3]) + eps
+  ```
+  - `eps` is normally distributed noise term.
+  - The function corresponds to equation (6.2) from the referenced paper for results comparison, but you can modify it as needed.
 
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
