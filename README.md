@@ -69,6 +69,33 @@ The `GP_test(2).py` script follows these steps:
      models = model.mcmc_iterate_verbose(5_000, 100)
      print(models[-1].alpha) # Extracting Model Parameters
      ```
+     Runs 5,000 iterations, with updates printed every 100 steps.
+   
+- Extracting and Evaluating Model Performance
+    ```
+    all_ros = np.row_stack([m.ro[:20] for m in models])
+    likelihoods = [m.saved_log_likelihood for m in models]
+    best = models[np.argmax(likelihoods)]
+    y_predict = best.predict(x_f)
+    print(f"Mean error = {np.sqrt(np.mean(np.square(y_predict - y_f)))}")
+    ```
+    obtain mean error from here
+
+- Visualizing Model Results
+    ```
+    plt.figure(dpi=100)
+    plt.figure(figsize=(9, 6))  # Set figure size for the box plot
+    plt.boxplot(all_ros, flierprops={'marker': 'o', 'markersize': 1})
+    plt.show()
+    ```
+    The above plot visualizes surface response to the input data set of x's.
+    The further away a boxplot is from "1" along the y-axis, the stronger the response.
+    We infer that the  covariates were selected fif they are clearly separated from "1"
+- # Expected Results
+  
+    
+
+    
 
  
 ## Expected Results
