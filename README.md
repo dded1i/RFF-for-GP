@@ -23,6 +23,9 @@ This will generate:
 - runtime in seconds
 - boxplots illustration of the association of individual covariates (x’s) with the response
 
+## Testing Walkthrough 
+The `GP_test(2).py` script follows these steps:
+
 
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
