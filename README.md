@@ -98,7 +98,7 @@ The `GP_test(2).py` script follows these steps:
    - T ≈ 40 s
 - **Variable Selection Results:**
    - Correctly identifies 4 / 4 covariates (corresponding to x₁, x₂, x₃, x₄)
-     ![Plot]() 
+     ![Plot](gp_images/correctplot.png) 
 
 
 
