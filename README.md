@@ -9,7 +9,8 @@ A Python implementation of Gaussian Processes (GP) with Random Fourier Features 
 - Supports different kernel functions.  
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
-
+- **Mean Error:**
+- Mean error = 0.055775034318735026
 The expected results include:
 ## Usage
 The functions to test and plot results are in GP_test (2).py.
