@@ -50,13 +50,13 @@ The `GP_test(2).py` script follows these steps:
    - `n`: size of training data set
    - `p`: input vector length
  
--  Generating Training and Test Data 
+-  Generating Training and Test Data
   ```
-  x = np.random.uniform(size=(n, p))  
-  eps = np.random.normal(scale=0.05, size=n)  
-  x_f = np.random.uniform(size=(n_f, p))
-  y = func(x, eps)
-  y_f = func(x_f)
+    x = np.random.uniform(size=(n, p))  
+    eps = np.random.normal(scale=0.05, size=n)  
+    x_f = np.random.uniform(size=(n_f, p))
+    y = func(x, eps)
+    y_f = func(x_f)
   ```
 - Initializing the Gaussian Process Model
   ```
