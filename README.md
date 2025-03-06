@@ -26,11 +26,11 @@ This will generate:
 ## Testing Walkthrough 
 The `GP_test(2).py` script follows these steps:
 - import the required libraries
-  '''
+  ```
   import numpy as np
   import GP_no_scheme as gp
   import matplotlib.pyplot as plt
-  '''
+  ```
 
 
 ## Expected Results
