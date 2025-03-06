@@ -66,9 +66,9 @@ The `GP_test(2).py` script follows these steps:
     
 -  Running MCMC Sampling
      ```
-  models = model.mcmc_iterate_verbose(5_000, 100)
-  print(models[-1].alpha) # Extracting Model Parameters
-  ```
+     models = model.mcmc_iterate_verbose(5_000, 100)
+     print(models[-1].alpha) # Extracting Model Parameters
+     ```
 
  
 ## Expected Results
