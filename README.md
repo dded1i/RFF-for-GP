@@ -46,7 +46,7 @@ The `GP_test(2).py` script follows these steps:
   p = 20      
   n_f = 100   
   ```
- - parametrization, same as in the simulation studies we have replicated, where:
+  parametrization, same as in the simulation studies we have replicated, where:
    - `n`: size of training data set
    - `p`: input vector length
 
