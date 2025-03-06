@@ -91,7 +91,9 @@ The `GP_test(2).py` script follows these steps:
     The above plot visualizes surface response to the input data set of x's.
     The further away a boxplot is from "1" along the y-axis, the stronger the response.
     We infer that the  covariates were selected fif they are clearly separated from "1"
-- # Expected Results
+- ### Expected Results:
+ - **Mean Error:**
+    -  Mean error = 0.055775034318735026
   
     
 
