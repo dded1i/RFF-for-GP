@@ -63,6 +63,14 @@ The `GP_test(2).py` script follows these steps:
   model = gp.GPM_rand_features(x, y, 0.25, 2, 0.1, 500, 100)
   ```
   - `gp.GPM_rand_features` initializes a GP model using Random Fourier Features (RFF).
+    
+-  Running MCMC Sampling
+  ```
+  models = model.mcmc_iterate_verbose(5_000, 100)
+  print(models[-1].alpha) # Extracting Model Parameters
+  ```
+
+ 
 ## Expected Results
 To test the variable selection method with the RFF kernel, run GP_test(2).py. Make sure the file is in the same folder as GP_no_scheme.py.
 The expected results include:
