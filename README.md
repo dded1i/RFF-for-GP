@@ -129,6 +129,6 @@ The `GP_test(2).py` script follows these steps:
      
 ## Performance Metrics
 - #### GP with RFF
-- F1_score=0.99
+  - F1_score=0.99
 - #### GP without RFF
-- F1_score=0.99
+  - F1_score=0.9901
