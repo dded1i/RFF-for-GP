@@ -111,10 +111,10 @@ The `GP_test(2).py` script follows these steps:
      
   - #### GP without RFF
    **Mean Error:**
-    -  Mean error = 0.055775034318735026
-**Run Time:**
+    -  Mean error = 0.05577503431873502
+  **Run Time:**
    - T ≈ 40 s
-**Variable Selection Results:**
+  **Variable Selection Results:**
    - Correctly identifies 4 / 4 covariates (corresponding to x₁, x₂, x₃, x₄)
      
 ## Performance Metrics
