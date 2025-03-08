@@ -59,9 +59,9 @@ The `GP_test(2).py` script follows these steps:
     y_f = func(x_f)
   ```
 - Initializing the Gaussian Process Model
-> **Note:** With the current code structure, only **one model can be run at a time**.  
-> The primary focus is on the **GP with RFF**, but the standard GP model (without RFF)  
-> can be run separately for **comparison**.
+> **Note:** With the current code structure, only one model can be run at a time.  
+> The primary focus is on the GP with RFF, but the GP model without RFF (GPM3)  
+> can be run separately for comparison.
 - #### GP with RFF
     ```
     model = gp.GPM_rand_features(x, y, 0.25, 2, 0.1, 500, 100)
