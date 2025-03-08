@@ -101,18 +101,24 @@ The `GP_test(2).py` script follows these steps:
     We infer that the  covariates were selected fif they are clearly separated from "1"
 - ### Expected Results:
 - #### GP with RFF
- - **Mean Error:**
+  **Mean Error:**
     -  Mean error = 0.055775034318735026
- - **Run Time:**
+  **Run Time:**
    - T ≈ 40 s
-- **Variable Selection Results:**
+  **Variable Selection Results:**
    - Correctly identifies 4 / 4 covariates (corresponding to x₁, x₂, x₃, x₄)
      ![Plot](gp_images/correctplot.png)
      
-  - #### GP model without RFF
-  - **Mean Error:**
+  - #### GP without RFF
+   **Mean Error:**
     -  Mean error = 0.055775034318735026
- - **Run Time:**
+   **Run Time:**
    - T ≈ 40 s
-
+  **Variable Selection Results:**
+   - Correctly identifies 4 / 4 covariates (corresponding to x₁, x₂, x₃, x₄)
+     
 ## Performance Metrics
+- #### GP with RFF
+- F1_score=0.99
+- #### GP without RFF
+- F1_score=0.99
