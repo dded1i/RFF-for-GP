@@ -1,4 +1,4 @@
-# RFF-for-GP  
+# Random Fourier Features for variable selection with Gaussian Processes  
 
 ## About The Project  
 A Python implementation of Gaussian Processes (GP) with Random Fourier Features (RFF) for scalable approximation.  
