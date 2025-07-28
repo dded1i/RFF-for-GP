@@ -1,17 +1,16 @@
 # Random Fourier Features for variable selection with Gaussian Processes  
 
 ## About The Project  
-A Python implementation of Gaussian Processes (GP) with Random Fourier Features (RFF) for scalable approximation.  
+A fast implementation of Gaussian Process (GP) variable selection model. Optimized MCMC sampling via adaptive covariance matrix computation and Random Fourier Features (RFF) approximation.  
 
 ## Features  
-- Implements Gaussian Process (GP) regression.  
-- Uses Random Fourier Features (RFF) for computational efficiency.  
-- Supports different kernel functions.
+- Implements GP variable selection model.    
+- Supports adaptive MCMC approach and RFF-based approach.
 
 ## Installation  
 Ensure **Python 3.7+** is installed with the required packages:  
 ```bash
-pip install numpy scipy scikit-learn matplotlib
+pip install -r requirements.txt
 ```
 
 ## Usage
@@ -32,7 +31,7 @@ The `GP_test(2).py` script follows these steps:
   import matplotlib.pyplot as plt
   ```
   
-- set random seed `np.random.seed(42)` to make the results reproducible
+- set random seed `np.random.seed(42)` for reproducibility
 - define the response function:
   ```
   def func(x: np.ndarray, eps=0):
